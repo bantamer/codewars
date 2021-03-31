@@ -2,6 +2,7 @@ function duplicateEncode(word) {
   const arr = word.toLowerCase().split('');
   let symbols = {};
   arr.forEach(element => {
+    // eslint-disable-next-line no-prototype-builtins
     if (symbols.hasOwnProperty(element)) {
       symbols[element] += 1;
     } else {
